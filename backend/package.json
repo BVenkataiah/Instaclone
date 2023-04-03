@@ -10,14 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Varma390/InstaClone.git"
+    "url": "git+https://github.com/BVenkataiah/Instaclone.git"
   },
   "author": "M Ravi Teja Varma",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Varma390/InstaClone/issues"
-  },
-  "homepage": "https://github.com/Varma390/InstaClone#readme",
+  
   "dependencies": {
     "body-parser": "^1.20.1",
     "cloudinary": "^1.33.0",

@@ -1,13 +1,12 @@
-const express = require("express");
+// for connecting to db and establishing server connection
+
+const app = require('./app')
 const mongoose = require("mongoose");
-const router = require("./routes/route");
-require('dotenv').config();
-const app = express();
-app.use(express.json());
-app.use('/', router);
+let port = process.env.PORT || 3000
+require('dotenv/config');
 
 const db = mongoose.connect('mongodb+srv://BVenkataiah:Venky18@cluster0.tojee2p.mongodb.net/?retryWrites=true&w=majority',{ useNewUrlParser: true, useUnifiedTopology: true })
             .then(() => console.log("connected to Database"))
             .catch((err) => console.log(err));
 
-app.listen(5000, () => console.log('Server running......'));
+app.listen(port, () => console.log('Server running......'));
